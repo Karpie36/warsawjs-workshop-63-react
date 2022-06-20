@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Checkbox } from 'semantic-ui-react';
 import PropTypes from 'prop-types';
 
 const ChartSwitcher = ({ isVisible, onChange }) => {
+
   return (
     <Checkbox
       checked={isVisible}

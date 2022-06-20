@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import PropTypes from 'prop-types';
 
 import {
@@ -14,7 +14,10 @@ import {
 
 import * as utils from '../commons/utils';
 const RatingChart = ({ data, onSelect }) => {
-  const chartData = () => utils.prepareChartData(data);
+  const deferredData = React.useDeferredValue(data);
+  const chartData = React.useMemo(
+    () => utils.prepareChartData(deferredData),
+  [deferredData])
 
   return (
     <ResponsiveContainer height={200}>

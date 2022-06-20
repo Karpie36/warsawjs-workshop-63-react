@@ -1,0 +1,27 @@
+WarsawJS Workshop 63 - React
+
+Ciekawe narzędzia:
+- Storybook
+- semantic-ui-react
+- react query
+- Saga
+- High Ordered Components
+- msw
+- lazy
+- hooki (odroczenie, differ value, debounce, useState) - odroczenie
+- xstate
+- fakerjs
+- jsdoc
+- useswr
+- indent rainbow
+
+
+Własny hook warto zrobić jak kilka rzczy zawsze robie się razem (np. kilka funkcji).
+Albo ta sama część kodu jest wykorzystywana w różnych komponentach.
+
+VSC:
+F2 - zmiana nazwy
+Alt + Shift + F - formatowanie kodu
+kursor na końcu linii + Ctrl + C - kopiowanie tej linii
+
+react hookForm
